@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kevin Özşimşek Portfolio
+
+A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This website showcases my work as a Platform Operations Engineer and freelance web developer.
+
+## Features
+
+- 🎨 Modern, clean design with dark mode support
+- 📱 Fully responsive layout
+- ⚡ Built with Next.js 14 (App Router)
+- 🎭 Smooth animations using Framer Motion
+- 🎯 SEO optimized
+- 🌙 Dark/Light mode toggle
+- 📝 Blog section for sharing insights
+- 📬 Contact form
+- 🔗 Social media integration
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Heroicons](https://heroicons.com/) - Icons
+- [Headless UI](https://headlessui.dev/) - UI components
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/letanom/kevinozsimsek-portfolio.git
+   cd kevinozsimsek-portfolio
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+├── src/
+│   ├── app/              # Next.js app directory
+│   ├── components/       # React components
+│   │   ├── sections/    # Page sections
+│   │   └── ...         # Other components
+│   └── styles/          # Global styles
+├── public/              # Static assets
+│   ├── images/         # Image files
+│   └── projects/       # Project screenshots
+└── ...                 # Configuration files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Update personal information in the components
+2. Replace images in the `public` directory
+3. Modify the color scheme in `tailwind.config.ts`
+4. Add or remove sections as needed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The site can be deployed to any platform that supports Next.js applications, such as:
 
-To learn more about Next.js, take a look at the following resources:
+- [Vercel](https://vercel.com) (recommended)
+- [Netlify](https://netlify.com)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License - feel free to use this template for your own portfolio!
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Website: [kevinozsimsek.com](https://kevinozsimsek.com)
+- Email: [kevinozsimsek@gmail.com](mailto:kevinozsimsek@gmail.com)
+- LinkedIn: [Kevin Özşimşek](https://www.linkedin.com/in/kev%C4%B1n-%C3%B6z%C5%9Fim%C5%9Fek-2a8773194/)
+- GitHub: [@letanom](https://github.com/letanom)
+- Medium: [@kevinozsimsek](https://medium.com/@kevinozsimsek)
