@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import TerminalHeader from '@/components/TerminalHeader'
 import ScrollToTop from '@/components/ScrollToTop'
-import ClientBackground from '@/components/ClientBackground'
+import ClientComponents from '@/components/ClientComponents'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,13 +43,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable} scroll-smooth`}>
-      <body className="antialiased bg-black text-white min-h-screen">
-        <TerminalHeader />
-        <ClientBackground />
-        <main className="relative">
-          {children}
-        </main>
-        <ScrollToTop />
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="next-head-count" content="2" />
+      </head>
+      <body suppressHydrationWarning className="antialiased bg-black text-white min-h-screen overflow-x-hidden">
+        <div id="app-root" className="relative min-h-screen">
+          <ClientComponents />
+          <main className="relative z-10">
+            {children}
+          </main>
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );
