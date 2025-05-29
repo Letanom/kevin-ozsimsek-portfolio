@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable} scroll-smooth`}>
-      <body className="antialiased bg-surface text-white min-h-screen">
+      <body className="antialiased bg-black text-white min-h-screen">
         <TerminalHeader />
         <ClientBackground />
         <main className="relative">

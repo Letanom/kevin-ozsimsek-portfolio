@@ -16,7 +16,7 @@ export default function DynamicBackground() {
   return (
     <>
       {/* Background Elements */}
-      <div className="fixed inset-0 bg-gradient-radial-dark from-surface-light via-surface to-surface-dark -z-10" />
+      <div className="fixed inset-0 bg-gradient-radial-dark from-gray-800 via-gray-900 to-black -z-10" />
       <div className="fixed inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.02] -z-10" />
       <div className="fixed inset-0 bg-noise opacity-[0.03] -z-10" />
       
@@ -26,7 +26,7 @@ export default function DynamicBackground() {
       <div className="fixed -bottom-8 left-20 w-96 h-96 bg-primary-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
       
       {/* Spotlight effect */}
-      <div className="fixed inset-0 bg-gradient-radial-dark from-transparent via-surface/50 to-surface-dark -z-10 animate-spotlight" />
+      <div className="fixed inset-0 bg-gradient-radial-dark from-transparent via-gray-900/50 to-black -z-10 animate-spotlight" />
     </>
   )
 } 
